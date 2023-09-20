@@ -17,7 +17,7 @@ def cargar_datos_sd_fallas():
 def cargar_datos_canales():
     global df_canales
     global pozo_actual
-    pozo_actual = input("Escriba el nombre del pozo")
+    pozo_actual = input("Escriba el nombre del pozo: ")
     df_canales = bg.cargar_filtrar_por_pozo(bg.ruta_archivo_canales, pozo_actual)
     print("Archivo CSV de Canales cargado con éxito.")
 
@@ -71,10 +71,10 @@ while True:
     print("\nMENU DE USUARIO")
     print("1. (*) Cargar archivo CSV con datos de SD y Fallas.")
     print("2. (*) Cargar el archivo CSV con datos de canales de un pozo.")
-    print("3. Generar la lista de diccionarios con la caracterización de SD y Fallas.")
+    print("3. Generar la lista de diccionarios con la caracterización de SD y Fallas a partir del cargue 1.")
     print("4. Calcular las agregaciones desde el inicio de un evento hacia atrás, de un pozo, dada un canal.")
-    print("5. Calcular las agregaciones para toda la línea de tiempo, de un pozo, dado un canal.")
-    print("6. (*) Calcular las agregaciones para toda la línea de tiempo, de un pozo, para todos los canales.")
+    print("5. Calcular las agregaciones para toda la línea de tiempo, del pozo cargadp en 2, dado un canal.")
+    print("6. (*) Calcular las agregaciones para toda la línea de tiempo, del pozo cargado en 2, para todos los canales.")
     print("7. Calcular las agregaciones para toda la línea de tiempo, para todos los pozos, para todos los canales.")
     print("8. (*) Salir")
     

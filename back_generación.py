@@ -365,7 +365,7 @@ def calcular_agregaciones_por_canal(lista, df, duracion, canal_filtro, pozo_filt
     print(diccionarios_salida)
     return df_resultado
 
-#Función que genera agregaciones, para un tipo de canal, filtrando los datos para un pozo:
+#Función que genera agregaciones, filtrando los datos para un pozo:
 def calcular_agregaciones(lista, df, duracion, pozo_filtro) -> pd.DataFrame:
     """
     Genera un dataframe con las agregaciones, de tal manera que cada agregación se construye en función de una ventana de tiempo
@@ -461,6 +461,7 @@ def calcular_agregaciones(lista, df, duracion, pozo_filtro) -> pd.DataFrame:
     return df_resultado
 
 #---------------------------------------------------------------------------------------------------
+#                                     FUNCIONES COMPLMENTARIAS
 #Función que muesta los diccionarios con los datos de una falla o SD, que estan en la lista que corresponde al nombre de pozo dado.
 def mostrar_diccionarios_por_pozo(lista_diccionarios: list, nombre_pozo: str):
     """
@@ -570,7 +571,7 @@ def calcular_agregaciones_todos_pozos(lista, duracion):
 
 #---------------------------------------------------------------------------------------------------
 #                                             PRUEBAS
-
+"""
 # Uso:
 # Consolidación de Fallas y SD:
 df = cargar_csv(ruta_archivo_sd_fallas, causas_filtradas)
@@ -620,3 +621,4 @@ guardar_df_to_csv(df_r, ruta_archivo)
 print(">>> ... Proceso finalizado")
 
 #Mezcla de 2 datafarmes por una misma columna: nuevo_dataframe = dataframe1.merge(dataframe2, on='time')
+"""
