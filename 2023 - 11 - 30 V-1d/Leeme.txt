@@ -1,1 +1,1 @@
-C
+Este directorio contiene las agregaciones sobre 46 pozos, cuyos datos están en el archivo entregadopor SLB, de nombre ESP_TAGGED_DATA_GENERIC_NAMES AJUS.zip.
